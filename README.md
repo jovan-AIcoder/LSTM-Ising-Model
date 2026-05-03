@@ -17,10 +17,7 @@ The Ising model evolves as a stochastic process governed by local spin interacti
 * Energy (E(t))
 * Magnetization (M(t))
 
-This creates a **coarse-grained time series**, and the LSTM attempts to predict:
-
-
-$[(E, M)*t \rightarrow (E, M)*{t+1}]$
+This creates a **coarse-grained time series**, and the LSTM attempts to predict the energy and magnetization at the future.
 
 
 ---
