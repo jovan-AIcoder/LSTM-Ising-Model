@@ -20,9 +20,7 @@ The Ising model evolves as a stochastic process governed by local spin interacti
 This creates a **coarse-grained time series**, and the LSTM attempts to predict:
 
 
-$[
-(E, M)*t \rightarrow (E, M)*{t+1}
-]$
+$[(E, M)*t \rightarrow (E, M)*{t+1}]$
 
 
 ---
