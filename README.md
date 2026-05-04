@@ -180,6 +180,7 @@ It is an experiment:
 
 Jovan
 Physics & AI Enthusiast
+
 Licensed under MIT License
 
 ---
