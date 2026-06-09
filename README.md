@@ -179,6 +179,7 @@ It is an experiment:
 ## 👤 Author
 
 Jovan
+
 Physics & AI Enthusiast
 
 Licensed under MIT License
