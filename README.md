@@ -99,7 +99,7 @@ graphs/Ising_graph_(...).png
 ### Step 1 — Generate Dataset
 
 ```bash
-python Ising_datagen.py
+python ising_datagen.py
 ```
 
 ---
@@ -107,7 +107,7 @@ python Ising_datagen.py
 ### Step 2 — Train LSTM
 
 ```bash
-python Ising_train_model.py
+python ising_train_model.py
 ```
 
 ---
