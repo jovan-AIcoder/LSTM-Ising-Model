@@ -34,6 +34,7 @@ This creates a **coarse-grained time series**, and the LSTM attempts to predict 
 ├── Ising_datagen.py
 ├── Ising_train_model.py
 ├── Ising_plot_graph.py
+├── requirements.txt
 └── README.md
 ```
 
@@ -157,12 +158,11 @@ Possible outcomes:
 
 ## 📚 Requirements
 
-* Python 3.x
-* NumPy
-* Pandas
-* Matplotlib
-* Scikit-learn
-* TensorFlow / Keras
+Run this command:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
