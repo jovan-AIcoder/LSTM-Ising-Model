@@ -77,21 +77,6 @@ def run_metropolis_and_track(spins, steps, beta, J, h):
         
     return energy_history, mag_history
 
-
-# Progress Bar Function (Kept in pure Python due to I/O streaming)
-def print_progress(step, total, bar_length=30):
-    """
-    Displays an animated progress bar in the terminal window.
-    """
-    progress = step / total
-    filled = int(bar_length * progress)
-    bar = "-" * filled + " " * (bar_length - filled)
-    GREEN = "\033[92m"
-    RESET = "\033[0m"
-    sys.stdout.write(f"\r{GREEN}{step}/{total} [{bar}]{RESET}")
-    sys.stdout.flush()
-
-
 def main():
     print("=== ISING MODEL CSV DATA GENERATOR (TURBO VERSION) ===\n")
 
@@ -102,7 +87,7 @@ def main():
     h = float(input("Enter external magnetic field (h): "))
     steps = int(input("Enter number of simulation steps: "))
 
-    print("\nCompiling and running simulation (Numba takes ~1-2 sec for the first run)...\n")
+    print("\nGenerating Data (this may take a while)...\n")
 
     beta = 1.0 / temperature
     spins = initialize_lattice(size)
@@ -110,9 +95,7 @@ def main():
     # Triggering the highly optimized simulation loop
     energy, magnetization = run_metropolis_and_track(spins, steps, beta, J, h)
 
-    # Flush final progress status bar
-    print_progress(steps, steps)
-    print() 
+    print('Success!') 
 
     # Compile simulation array outputs into a structured DataFrame
     df = pd.DataFrame({
